@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSL 2026 | Propuesta Comercial Institucional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Fuentes: Playfair Display (Serif) y Lato (Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Lato', sans-serif; 
+            background-color: #ffffff;
+            color: #0f172a; /* Slate 900 */
+        }
+        h1, h2, h3, h4, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .text-navy { color: #002855; }
+        .bg-navy { background-color: #002855; }
+        
+        /* Animaciones */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Top Bar -->
+    <div class="bg-[#001f3f] text-[10px] py-2 text-center uppercase tracking-widest text-blue-200 font-bold border-b border-white/10">
+        Documento Confidencial de Patrocinio • Temporada 2026
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#002855] backdrop-blur-md border-b border-white/10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-24">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://blockchainsummit.la/wp-content/uploads/2025/07/BSL-Logo-blanco-2024-1.png" alt="Blockchain Summit Latam" class="h-12 w-auto">
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#vision" class="text-xs font-bold uppercase tracking-widest text-blue-100 hover:text-white transition-colors">La Visión</a>
+                    <a href="#impact" class="text-xs font-bold uppercase tracking-widest text-blue-100 hover:text-white transition-colors">Impacto</a>
+                    <a href="#gallery" class="text-xs font-bold uppercase tracking-widest text-blue-100 hover:text-white transition-colors">Galería</a>
+                    <a href="#tour" class="text-xs font-bold uppercase tracking-widest text-blue-100 hover:text-white transition-colors">El Tour</a>
+                    <a href="#investment" class="px-5 py-2 bg-white text-navy text-xs font-bold uppercase tracking-widest hover:bg-slate-100 transition-colors shadow-lg">
+                        Propuesta Económica
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 40, 85, 0.6), rgba(0, 40, 85, 0.5)), url('https://media.licdn.com/dms/image/v2/D4E22AQHgqoaWGfX1HQ/feedshare-shrink_2048_1536/B4EZrxGAt5HUAk-/0/1764981477613?e=1770249600&v=beta&t=mXeH8xaqbN3exKdnNn1WZLhKhTFU0VASyvZyYBAzhN4');">
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10 pt-20">
+            <h1 class="fade-in-up text-4xl md:text-6xl lg:text-7xl text-white font-light mb-6 leading-tight tracking-tight uppercase drop-shadow-md font-sans">
+                El evento institucional <br/>
+                <span class="font-serif italic font-normal text-blue-50 normal-case block mt-3 text-3xl md:text-5xl lg:text-6xl">más importante de Latam.</span>
+            </h1>
+            <p class="fade-in-up delay-100 text-lg md:text-xl text-white/90 font-light max-w-xl mx-auto mb-12 tracking-wide leading-relaxed font-sans">
+                Conectando a Bancos Centrales, Reguladores y Corporaciones en los 3 hubs estratégicos de la región.
+            </p>
+            <div class="fade-in-up delay-200 flex flex-col sm:flex-row justify-center gap-6 font-sans">
+                <a href="#investment" class="px-10 py-4 bg-white/90 text-navy text-xs font-bold uppercase tracking-[0.2em] hover:bg-white transition-all shadow-xl backdrop-blur-sm border border-transparent hover:border-white/50 rounded-sm">
+                    Ver Patrocinios
+                </a>
+                <a href="#tour" class="px-10 py-4 border border-white/40 text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-white/10 hover:border-white transition-colors backdrop-blur-sm rounded-sm">
+                    El Tour
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 animate-bounce text-white/50">
+            <i data-lucide="arrow-down" class="w-6 h-6"></i>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section id="impact" class="py-24 bg-white border-b border-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div class="stat-card group cursor-default">
+                    <div class="text-5xl font-serif text-navy mb-4 group-hover:scale-110 transition-transform">10</div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Años de Trayectoria</p>
+                </div>
+                <div class="stat-card group cursor-default">
+                    <div class="text-5xl font-serif text-navy mb-4 group-hover:scale-110 transition-transform">+52</div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Instituciones</p>
+                </div>
+                <div class="stat-card group cursor-default">
+                    <div class="text-5xl font-serif text-navy mb-4 group-hover:scale-110 transition-transform">3</div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Hubs Financieros</p>
+                </div>
+                <div class="stat-card group cursor-default">
+                    <div class="text-5xl font-serif text-navy mb-4 group-hover:scale-110 transition-transform">B2B</div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Foco Exclusivo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Sponsor Carousel -->
+    <section class="py-16 bg-slate-50 border-b border-slate-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-10 text-center">
+            <p class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Confianza Institucional & Histórica</p>
+        </div>
+        <div class="relative flex overflow-x-hidden group">
+            <div class="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-slate-50 to-transparent z-10"></div>
+            <div class="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-slate-50 to-transparent z-10"></div>
+            <div class="animate-marquee whitespace-nowrap flex items-center gap-16 px-8">
+                <!-- Batch 1 -->
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">VISA</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Binance</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Microsoft</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Bitso</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Circle</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Ripple</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Mastercard</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Algorand</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Chainalysis</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Fireblocks</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Koibanx</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Avalanche</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Davivienda</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Bancolombia</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">BID Lab</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Towerbank</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Exness</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">CoinEx</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Ripio</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Bitget</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">XM</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Celo</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Deribit</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Hive</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Input Output</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Kravata</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Ledn</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">TruBit</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Polkadot</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Buda.com</span>
+                <!-- Batch 2 (Duplicate for loop) -->
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">VISA</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Binance</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Microsoft</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Bitso</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Circle</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Ripple</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Mastercard</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Algorand</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Chainalysis</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Fireblocks</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Koibanx</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Avalanche</span>
+                <span class="text-2xl text-slate-400 font-serif hover:text-navy transition-colors cursor-default">Davivienda</span>
+            </div>
+        </div>
+        <style>
+            .animate-marquee { animation: marquee 60s linear infinite; }
+            .group:hover .animate-marquee { animation-play-state: paused; }
+            @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        </style>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5">
+                    <h2 class="text-4xl md:text-5xl text-navy mb-8 leading-tight font-serif">
+                        Infraestructura <br>
+                        <span class="text-slate-400 italic">Crítica.</span>
+                    </h2>
+                    <p class="text-slate-600 mb-8 leading-relaxed text-lg font-light">
+                        En 2026, la conversación ya no es especulación. Es sobre <strong>Tokenización (RWA)</strong>, <strong>Stablecoins</strong> y la <strong>Interoperabilidad Bancaria</strong>.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-lg font-light">
+                        BSL On Tour es el único espacio garantizado para dialogar con quienes escriben las reglas del juego financiero.
+                    </p>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-12 shadow-2xl shadow-slate-200/50 border border-slate-100">
+                        <h3 class="font-serif text-2xl text-navy mb-8">Perfil del Asistente</h3>
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-6">
+                                <span class="text-2xl font-bold text-navy w-16">45%</span>
+                                <div class="flex-1">
+                                    <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">C-Level & Directivos</p>
+                                    <div class="w-full bg-slate-100 h-0.5"><div class="bg-navy h-0.5 w-[45%]"></div></div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <span class="text-2xl font-bold text-navy w-16">30%</span>
+                                <div class="flex-1">
+                                    <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Banca Tradicional</p>
+                                    <div class="w-full bg-slate-100 h-0.5"><div class="bg-navy h-0.5 w-[30%]"></div></div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <span class="text-2xl font-bold text-navy w-16">15%</span>
+                                <div class="flex-1">
+                                    <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Reguladores</p>
+                                    <div class="w-full bg-slate-100 h-0.5"><div class="bg-navy h-0.5 w-[15%]"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-white border-b border-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <span class="text-blue-700 font-bold text-xs uppercase tracking-widest mb-4 block">Experiencia & Networking</span>
+                <h2 class="text-4xl md:text-5xl text-navy font-serif mb-4">Así vivimos el BSL 2025</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto font-light text-lg">
+                    La cumbre donde las conexiones estratégicas se convierten en alianzas tangibles.
+                </p>
+            </div>
+            
+            <!-- Harmonious Bento Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                
+                <!-- Main Feature (Auditorio) - Takes up 8 columns and 2 rows height -->
+                <div class="md:col-span-8 md:row-span-2 relative group overflow-hidden bg-slate-100 cursor-pointer h-[420px] rounded-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E22AQGuKhVTc6u85Q/feedshare-shrink_2048_1536/B4EZrxGLwMHUAo-/0/1764981522847?e=1770249600&v=beta&t=hWE5FE031XXQE3Eyq2cT9n4I5IcM_jBtpYEd8hOBLzA" alt="Auditorio Principal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-navy/20 group-hover:bg-navy/10 transition-colors duration-300"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="bg-navy/90 text-white px-4 py-1 text-[10px] font-bold uppercase tracking-widest backdrop-blur-md">Main Stage</span>
+                    </div>
+                </div>
+
+                <!-- Side Detail 1 (Speaker) - Takes up 4 columns -->
+                <div class="md:col-span-4 md:row-span-1 relative group overflow-hidden bg-slate-100 cursor-pointer h-[200px] rounded-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E22AQG5p5Jb7GO-1A/feedshare-shrink_2048_1536/B4EZrxGKcPGUAo-/0/1764981517511?e=1770249600&v=beta&t=O51CIOEkX0M5dcKusbiMketmvVosJKBhdfhdEDXs-bg" alt="Speaker" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-white text-[10px] font-bold uppercase tracking-widest drop-shadow-md">Speakers Globales</span>
+                    </div>
+                </div>
+
+                <!-- Side Detail 2 (Panel) - Takes up 4 columns -->
+                <div class="md:col-span-4 md:row-span-1 relative group overflow-hidden bg-slate-100 cursor-pointer h-[204px] rounded-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E22AQEue3oYA39Z7w/feedshare-shrink_2048_1536/B4EZrxGKzOKYAk-/0/1764981519525?e=1770249600&v=beta&t=xHGVQ2bKwJsJ_78PIcLhriSU0eDxrnfQ0uk3XapKBuk" alt="Panel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-white text-[10px] font-bold uppercase tracking-widest drop-shadow-md">Debate Regulatorio</span>
+                    </div>
+                </div>
+
+                <!-- Bottom Base 1 (Commercial Area) - Takes up 6 columns -->
+                <div class="md:col-span-6 md:row-span-1 relative group overflow-hidden bg-slate-100 cursor-pointer h-[250px] rounded-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E22AQHo5b-pcdlPqA/feedshare-shrink_2048_1536/B4EZrmKBEtHcAw-/0/1764798117905?e=1770249600&v=beta&t=ovFp_nX0Oq8fdJyLVbrF1VHeyOKqOFXU9YeR77WN4Q8" alt="Comercial Area" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-serif italic text-2xl">Zona Comercial</span>
+                    </div>
+                </div>
+
+                <!-- Bottom Base 2 (Networking) - Takes up 6 columns -->
+                <div class="md:col-span-6 md:row-span-1 relative group overflow-hidden bg-slate-100 cursor-pointer h-[250px] rounded-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E22AQH2L-5KjXdBeA/feedshare-shrink_2048_1536/B4EZrmKALfGYAw-/0/1764798093038?e=1770249600&v=beta&t=JyX_4zkZDsHT1hkhApZIXY_vPw9MaOG4AWfF1VoBuFE" alt="Networking" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                     <div class="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-serif italic text-2xl">Networking de Alto Nivel</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-xs text-slate-400 uppercase tracking-widest">Momentos destacados Edición 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Zone -->
+    <section id="vip-zone" class="py-24 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/3 order-2 lg:order-1">
+                    <div class="w-12 h-0.5 bg-navy mb-6"></div>
+                    <span class="text-blue-700 font-bold text-xs uppercase tracking-widest mb-4 block">Acceso Exclusivo</span>
+                    <h2 class="text-4xl text-navy font-serif mb-6">Zona VIP & <br>Business Lounge</h2>
+                    <p class="text-slate-600 font-light text-lg leading-relaxed mb-8">
+                        Un entorno diseñado para la privacidad y el confort. Aquí es donde Speakers, Sponsors y holders de Tickets VIP transforman las conversaciones académicas en acuerdos estratégicos.
+                    </p>
+                    <ul class="space-y-4 text-sm text-navy font-bold tracking-wide">
+                        <li class="flex items-center gap-3"><i data-lucide="coffee" class="w-4 h-4 text-blue-700"></i> Catering All-Day Premium</li>
+                        <li class="flex items-center gap-3"><i data-lucide="wifi" class="w-4 h-4 text-blue-700"></i> High-Speed Wi-Fi & Work Stations</li>
+                        <li class="flex items-center gap-3"><i data-lucide="users" class="w-4 h-4 text-blue-700"></i> Acceso Directo a Speakers</li>
+                    </ul>
+                </div>
+                <div class="lg:w-2/3 w-full grid grid-cols-1 md:grid-cols-2 gap-4 h-[500px] order-1 lg:order-2">
+                    <div class="md:col-span-2 md:row-span-1 h-64 overflow-hidden relative group rounded-sm shadow-xl">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E22AQFbGxWlOzQTaQ/feedshare-shrink_2048_1536/B4EZrmJ.2OHEAw-/0/1764797977810?e=1770249600&v=beta&t=PCqBU4KDWdlg8_LddCaa6oewNrUXr1NaeT8EioQIOOo" alt="VIP Lounge" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 text-white"><p class="font-serif italic text-2xl">Lounge Exclusivo</p></div>
+                    </div>
+                    <div class="overflow-hidden relative group rounded-sm shadow-xl h-full">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E22AQF02R48fdFlVA/feedshare-shrink_2048_1536/B4EZrmJ_GMKcA0-/0/1764797988528?e=1770249600&v=beta&t=tN9dr1JLlOw3oWznZKqdMhM3F2CGU439ob8i8iinvqo" alt="VIP Seating" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden relative group rounded-sm shadow-xl h-full">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E22AQEJgbrwE1Bokw/feedshare-shrink_2048_1536/B4EZrmJ_iYKcAw-/0/1764798098896?e=1770249600&v=beta&t=2N-0_siSZdsyoH0mWD3VLW2b3OGo6FlmUSINrJLs_Oc" alt="VIP Detail" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Section -->
+    <section id="tour" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 mb-16 text-center">
+            <span class="text-blue-700 font-bold text-xs uppercase tracking-widest mb-4 block">Estrategia Regional</span>
+            <h2 class="text-4xl md:text-5xl text-navy font-serif mb-4">BSL On Tour 2026</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto font-light text-lg">Tres mercados clave. Tres universidades de prestigio. Una sola conversación de alto nivel.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200 shadow-xl shadow-slate-200/50">
+                <div class="group relative overflow-hidden h-80">
+                    <img src="https://img.static-kl.com/transform/d14d39f4-c42c-4904-b895-5a8e42366e08/" alt="Lima" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="block text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-2">Mayo 6, 7 y 8</span>
+                        <h3 class="text-3xl text-white font-serif mb-2">Lima, Perú</h3>
+                        <p class="text-sm font-bold text-blue-400 uppercase tracking-wide">Universidad del Pacífico</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden h-80">
+                    <img src="https://www.latamairlines.com/content/dam/latamxp/sites/destinos/chile/seo/vuelos-santiago.jpg" alt="Santiago" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="block text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-2">Agosto 6 y 7</span>
+                        <h3 class="text-3xl text-white font-serif mb-2">Santiago, Chile</h3>
+                        <p class="text-sm font-bold text-blue-400 uppercase tracking-wide">Universidad de Chile</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden h-80">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bogotá" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="block text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-2">Noviembre 5 y 6</span>
+                        <h3 class="text-3xl text-white font-serif mb-2">Bogotá, Colombia</h3>
+                        <p class="text-sm font-bold text-blue-400 uppercase tracking-wide">Universidad EAFIT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="investment" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-900/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-8">
+                <div>
+                    <h2 class="text-4xl text-white font-serif mb-2">Propuesta de Inversión</h2>
+                    <p class="text-slate-400 font-light">Maximice su ROI participando en la gira completa (3 países).</p>
+                </div>
+                <div class="mt-8 md:mt-0 bg-white/5 p-1 rounded-lg inline-flex backdrop-blur-sm border border-white/10">
+                    <button onclick="setPricing(1)" id="btn-1" class="px-6 py-2 rounded-md text-xs font-bold uppercase tracking-widest bg-blue-600 text-white shadow-lg transition-all">1 País</button>
+                    <button onclick="setPricing(2)" id="btn-2" class="px-6 py-2 rounded-md text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all">2 Países (-25%)</button>
+                    <button onclick="setPricing(3)" id="btn-3" class="px-6 py-2 rounded-md text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all relative">
+                        3 Países (-33%)
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Platinum -->
+                <div class="bg-white text-slate-900 p-8 rounded-sm shadow-2xl transform hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-navy"></div>
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-serif text-navy font-bold">Platinum</h3>
+                        <i data-lucide="crown" class="w-5 h-5 text-yellow-600"></i>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-sm text-slate-500">Inversión desde</span>
+                        <div class="text-4xl font-bold text-navy tracking-tight" id="price-plat">US$ 30K</div>
+                    </div>
+                    <div class="space-y-4 mb-8 text-sm">
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0"></i> <b>Stand 4x3m</b></div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0"></i> Keynote Exclusivo</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0"></i> Panel & Workshop</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0"></i> 20 Pases VIP</div>
+                    </div>
+                    <a href="#contact" class="block w-full py-4 bg-navy text-white text-center text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors">Reservar Exclusividad</a>
+                </div>
+                <!-- Gold -->
+                <div class="bg-slate-800 border border-slate-700 p-8 rounded-sm hover:bg-slate-750 transition-colors">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-serif text-white">Gold</h3>
+                        <i data-lucide="star" class="w-5 h-5 text-slate-500"></i>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-sm text-slate-400">Inversión desde</span>
+                        <div class="text-4xl font-bold text-white tracking-tight" id="price-gold">US$ 20K</div>
+                    </div>
+                    <div class="space-y-4 mb-8 text-sm text-slate-300">
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0"></i> Stand 3x2m</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0"></i> Panel & Workshop</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0"></i> 15 Pases VIP</div>
+                    </div>
+                    <a href="#contact" class="block w-full py-4 border border-slate-600 text-white text-center text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-navy transition-colors">Seleccionar</a>
+                </div>
+                <!-- Silver -->
+                <div class="bg-slate-800 border border-slate-700 p-8 rounded-sm hover:bg-slate-750 transition-colors">
+                    <h3 class="text-2xl font-serif text-white mb-4">Silver</h3>
+                    <div class="mb-6">
+                        <span class="text-sm text-slate-400">Inversión desde</span>
+                        <div class="text-4xl font-bold text-white tracking-tight" id="price-silver">US$ 10K</div>
+                    </div>
+                    <div class="space-y-4 mb-8 text-sm text-slate-300">
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 flex-shrink-0"></i> Stand 2x2m</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 flex-shrink-0"></i> Panel</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 flex-shrink-0"></i> 10 Pases VIP</div>
+                    </div>
+                    <a href="#contact" class="block w-full py-4 border border-slate-600 text-white text-center text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-navy transition-colors">Seleccionar</a>
+                </div>
+                 <!-- Copper -->
+                <div class="bg-slate-800 border border-slate-700 p-8 rounded-sm opacity-80 hover:opacity-100 transition-colors">
+                    <h3 class="text-2xl font-serif text-white mb-4">Copper</h3>
+                    <div class="mb-6">
+                        <span class="text-sm text-slate-400">Inversión desde</span>
+                        <div class="text-4xl font-bold text-white tracking-tight" id="price-copper">US$ 5K</div>
+                    </div>
+                    <div class="space-y-4 mb-8 text-sm text-slate-300">
+                        <div class="flex items-start gap-3"><i data-lucide="minus" class="w-4 h-4 text-slate-600 flex-shrink-0"></i> Sin Stand</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 flex-shrink-0"></i> Panel</div>
+                        <div class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 flex-shrink-0"></i> 5 Pases VIP</div>
+                    </div>
+                    <a href="#contact" class="block w-full py-4 border border-slate-600 text-white text-center text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-navy transition-colors">Seleccionar</a>
+                </div>
+            </div>
+            <div class="mt-12 text-center border-t border-white/10 pt-8">
+                <p class="text-slate-400 text-sm mb-4">Branding Opportunities:</p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm font-serif text-slate-300">
+                    <span class="flex items-center gap-2"><i data-lucide="wine" class="w-4 h-4"></i> Cocktail de Bienvenida</span>
+                    <span class="flex items-center gap-2"><i data-lucide="coffee" class="w-4 h-4"></i> VIP Networking Area</span>
+                    <span class="flex items-center gap-2"><i data-lucide="tag" class="w-4 h-4"></i> Lanyards</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl text-navy font-serif mb-6">Hablemos de Negocios</h2>
+            <p class="text-slate-600 text-lg font-light mb-12 max-w-2xl mx-auto">
+                Esta es una invitación para formar parte del grupo selecto que liderará la narrativa financiera de 2026.
+            </p>
+            <div class="bg-slate-50 p-10 border border-slate-200 shadow-xl max-w-2xl mx-auto text-left">
+                <form onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden'); this.classList.add('hidden');" class="space-y-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Nombre y Cargo</label>
+                        <input type="text" class="w-full bg-white border border-slate-300 px-4 py-3 text-slate-900 focus:outline-none focus:border-navy transition-colors" placeholder="Ej. Roberto Gómez, CEO" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Institución / Empresa</label>
+                        <input type="text" class="w-full bg-white border border-slate-300 px-4 py-3 text-slate-900 focus:outline-none focus:border-navy transition-colors" placeholder="Ej. Banco Regional" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Correo Corporativo</label>
+                        <input type="email" class="w-full bg-white border border-slate-300 px-4 py-3 text-slate-900 focus:outline-none focus:border-navy transition-colors" placeholder="nombre@empresa.com" required>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-navy text-white text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-all shadow-lg mt-4">
+                        Solicitar Reunión Comercial
+                    </button>
+                </form>
+                <div id="success-msg" class="hidden text-center py-12">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="check" class="w-8 h-8 text-green-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif text-navy mb-2">Solicitud Recibida</h3>
+                    <p class="text-slate-600 font-light">Su perfil ha sido registrado. El equipo comercial de BSL se pondrá en contacto en menos de 24 horas.</p>
+                </div>
+            </div>
+            <div class="mt-12 flex flex-col items-center gap-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Contacto Directo</span>
+                <a href="mailto:r@blockchainsummit.la" class="text-xl font-serif text-navy hover:underline">r@blockchainsummit.la</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center opacity-80">
+            <div class="mb-4 md:mb-0">
+                <img src="https://blockchainsummit.la/wp-content/uploads/2025/07/BSL-Logo-blanco-2024-1.png" alt="Blockchain Summit Latam" class="h-8 w-auto mb-4">
+                <p class="text-[10px] uppercase tracking-widest text-slate-400 mt-1">Institutional Platform 2026</p>
+            </div>
+            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-white">LinkedIn</a>
+                <a href="#" class="hover:text-white">Twitter</a>
+                <a href="#" class="hover:text-white">Media Kit</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const prices = {
+            1: { plat: '30K', gold: '20K', silver: '10K', copper: '5K' },
+            2: { plat: '45K', gold: '30K', silver: '15K', copper: '7.5K' },
+            3: { plat: '60K', gold: '40K', silver: '20K', copper: '10K' }
+        };
+        function setPricing(countries) {
+            document.getElementById('price-plat').innerText = 'US$ ' + prices[countries].plat;
+            document.getElementById('price-gold').innerText = 'US$ ' + prices[countries].gold;
+            document.getElementById('price-silver').innerText = 'US$ ' + prices[countries].silver;
+            document.getElementById('price-copper').innerText = 'US$ ' + prices[countries].copper;
+            [1, 2, 3].forEach(id => {
+                const btn = document.getElementById('btn-' + id);
+                if (id === countries) {
+                    btn.className = "px-6 py-2 rounded-md text-xs font-bold uppercase tracking-widest bg-blue-600 text-white shadow-lg transition-all transform scale-105";
+                } else {
+                    btn.className = "px-6 py-2 rounded-md text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-all";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
